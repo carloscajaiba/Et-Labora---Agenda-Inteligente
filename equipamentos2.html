@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Carlos Eduardo">
+    <meta name="keywords" content="Agenda, Organização, Trabalho">
+    <meta namme="description" content="Website da Et Labora">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Et Labora</title>
+<style>
+/* Body */
+body{
+  padding-bottom: 55px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Body */
+
+/* Sombreamento */
+.header,.registro-title,.registro-sub2,.registro-sub3,.back,.submit{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
+}
+
+.header {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+/* Sombreamento */
+
+/* Header */
+.header {
+  width: 100%;
+  display: flex;
+  height: 110px;
+  background-color: #495EEE;
+  padding: 20px 40px;      
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none; 
+  gap: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1.2rem;
+}
+/* Header */
+
+/* Main */
+main {
+  flex: 1;
+  display: flex;
+}
+/* Main */
+
+/* Registro */
+.registro {
+  display: flex;
+  background-color: rgb(212, 234, 255);
+  border-radius: 12px;
+  width: 50%;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+  height: auto;
+}
+
+.registro-title {
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 30px;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.registro-sub1 {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.registro-sub2 {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    color: #333333;
+    gap: 10px;
+}
+
+.registro-sub3 {
+    display: flex;
+    gap: 300px;
+}
+
+.box {
+    display: flex;
+    background-color: white;
+    border-radius: 6px;
+    width: 500px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.registro-title,.registro-sub1,.registro-sub2 {
+    margin-bottom: 30px;
+}
+
+.submit {
+    display: flex;
+    text-decoration: none;
+    background-color: #76aff5ac;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size:1.1rem;
+}
+
+.back {
+    display: flex;
+    text-decoration: none;
+    background-color: #f81414aa;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size:1.1rem;
+}
+/* Registro */
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background-color: #495EEE;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+/* Footer */
+
+/* Mobile */
+@media (max-width: 900px) {
+  .header { height: auto; min-height: 110px; padding: 20px 28px; gap: 20px; flex-wrap: wrap; }
+  .menu { gap: 18px 26px; flex-wrap: wrap; }
+  .registro { width: min(75%, 680px); }
+  .box { width: 100%; max-width: 500px; }
+  .registro-sub3 { gap: clamp(24px, 12vw, 160px); justify-content: space-between; }
+  .footer { padding: 12px 20px; text-align: center; line-height: 1.4; }
+  body { padding-bottom: 76px; }
+}
+@media (max-width: 600px) {
+  .header { flex-direction: column; align-items: center; justify-content: center; padding: 18px 16px 20px; gap: 16px; }
+  .logo { font-size: 1.8rem; }
+  nav { width: 100%; }
+  .menu { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 10px; width: 100%; text-align: center; }
+  .menu li a { display: block; font-size: .95rem; padding: 7px 3px; }
+  .registro { width: calc(100% - 28px); margin: 18px auto; padding: 22px 18px; }
+  .registro form { width: 100%; }
+  .registro-title { font-size: 1.5rem; text-align: center; }
+  .registro-sub2 { flex-wrap: wrap; align-items: center; gap: 8px; font-size: 1rem; }
+  .registro-sub3 { gap: 16px; justify-content: space-between; }
+  .back, .submit { justify-content: center; min-width: 112px; }
+  .footer { min-height: 64px; height: auto; font-size: .78rem; padding: 12px 14px; }
+  body { padding-bottom: 82px; }
+}
+/* Mobile */
+
+</style>
+</head>
+<body>
+    <header class="header">
+  <section class="logo"> Et Labora </section>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="home.html">  INÍCIO  </a></li>
+      <li><a href="calendar.html">  CALENDÁRIO  </a></li>
+      <li><a href="trabalhos.html"> TRABALHOS </a></li>
+      <li><a href="equipamentos.html">  EQUIPAMENTOS  </a></li>
+    </ul>
+  </nav>
+    </header>
+
+    <main>
+        <section class="registro">
+          <form>
+            <div class="registro-title">Registro de Equipamento</div>
+            
+            <div class="registro-sub1">
+                <input class="box" type="text" name="NomeEquipamento" placeholder="Nome do Equipamento">
+            </div>
+
+            <div class="registro-sub2">
+                <b>Situação atual:</b>
+                <input type="checkbox" name="situacao" value="uso">Disponível
+                <input type="checkbox" name="situacao" value="reparo">Em reparos
+                <input type="checkbox" name="situacao" value="desativo">Indisponível
+            </div>
+
+            <div class="registro-sub3">
+                <a class="back" href="equipamentos.html">Voltar</a>
+                <input class="submit" type="submit" value="Finalizar">
+            </div>
+          </form>
+        </section>
+    </main>
+
+    <footer class="footer"> Carlos Eduardo de Almeida Cajaiba © 2026 - Todos os direitos reservados - Proteção de Dados </footer>
+</body>
+</html>

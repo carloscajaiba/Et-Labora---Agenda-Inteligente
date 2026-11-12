@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Carlos Eduardo">
+    <meta name="keywords" content="Agenda, Organização, Trabalho">
+    <meta namme="description" content="Website da Et Labora">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Et Labora</title>
+<style>
+/* Body */
+body{
+  padding-bottom: 55px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Body */
+
+/* Sombreamento */
+.header,.lembrete,.card-text,.card-btn {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.header,.lembrete,.card{
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+/* Sombreamento */
+
+/* Header */
+.header {
+  width: 100%;
+  display: flex;
+  height: 110px;
+  background-color: #495EEE;
+  padding: 20px 40px;      
+  color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.menu {
+  list-style: none; 
+  gap: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 1.2rem;
+}
+/* Header */
+
+/* Lembrete */
+.lembrete {
+  display: flex;
+  background-color: #EED949;
+  width: 100%;
+  height: 75px;
+  color: white;
+  align-items: center;
+  padding: 20px 40px; 
+  justify-content: flex-start;
+  font-weight: bold;
+  font-size: 1.3rem;
+  overflow: hidden;
+}
+/* Lembrete */
+
+/* Main */
+.container {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 45px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(212, 234, 255);
+  border-radius: 12px;
+  color: rgb(66, 62, 62);
+  width: 300px;
+  height: 425px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #666666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.card-btn {
+  margin-top: auto;
+  display: flex;
+  text-decoration: none;
+  background-color: #76aff5a4;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  justify-content: center;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.card-btn:hover {
+  background-color: #559ff9e4; 
+}
+/* Main */
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  background-color: #495EEE;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+/* Footer */
+
+
+/* Mobile */
+@media (max-width: 900px) {
+  .header {
+    height: auto;
+    min-height: 110px;
+    padding: 20px 28px;
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    gap: 18px 26px;
+    flex-wrap: wrap;
+  }
+
+  .container {
+    justify-content: center;
+    padding: 36px 28px;
+    gap: 24px;
+  }
+
+  .card {
+    width: min(100%, 340px);
+  }
+
+  .footer {
+    padding: 12px 20px;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  body {
+    padding-bottom: 76px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 16px 20px;
+    gap: 16px;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu li a {
+    display: block;
+    font-size: 0.95rem;
+    padding: 7px 3px;
+  }
+
+  .lembrete {
+    min-height: 68px;
+    height: auto;
+    padding: 18px 20px;
+    font-size: 1.05rem;
+    line-height: 1.4;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 28px 18px;
+    gap: 22px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 420px;
+    height: 300px;
+    padding: 18px;
+  }
+
+  .card-body {
+    padding: 12px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+
+  .footer {
+    min-height: 64px;
+    height: auto;
+    font-size: 0.78rem;
+    padding: 12px 14px;
+  }
+
+  body {
+    padding-bottom: 82px;
+  }
+}
+
+@media (max-width: 360px) {
+  .menu li a {
+    font-size: 0.85rem;
+  }
+
+  .card {
+    height: 280px;
+  }
+
+  .lembrete {
+    font-size: 0.98rem;
+  }
+}
+/* Mobile */
+
+</style>
+</head>
+<body>
+    <header class="header">
+  <section class="logo"> Et Labora </section>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="home.html">  INÍCIO  </a></li>
+      <li><a href="calendar.html">  CALENDÁRIO  </a></li>
+      <li><a href="trabalhos.html"> TRABALHOS </a></li>
+      <li><a href="equipamentos.html">  EQUIPAMENTOS  </a></li>
+    </ul>
+  </nav>
+    </header>
+    <main>
+      <section class="lembrete">  Lembrete: Sem trabalhos hoje. </section>
+
+      <section class="container">
+        <div class="card">
+          <h3 class="card-title">Feriados</h3>
+          <p class="card-text"> Sem feriados registrados </p>
+          <a href="calendar.html" class="card-btn">Ver Calendário</a>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Trabalhos Próximos</h3>
+          <p class="card-text"> Sem trabalhos registrados </p>
+          <a href="trabalhos.html" class="card-btn">Ver Trabalhos</a>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">Seus Equipamentos</h3>
+          <p class="card-text"> Sem equipamentos registrados </p>
+          <a href="equipamentos.html" class="card-btn">Ver Equipamentos</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer"> Carlos Eduardo de Almeida Cajaiba © 2026 - Todos os direitos reservados - Proteção de Dados </footer>
+</body>
+</html>
