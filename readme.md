@@ -1,4 +1,3 @@
-<img width="1902" height="923" alt="Screenshot_7" src="https://github.com/user-attachments/assets/aa720776-904a-4e69-89fa-f19ddcae6b64" />
 # Et-Labora - Agenda-Inteligente
 
 ### Sistema de Agenda Inteligente "Et Labora", foco em organização laboral do dia a dia.
