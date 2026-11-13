@@ -34,7 +34,7 @@ As tecnologias utilizadas foram: HTML5, CSS3, JavaScript e Visual Studio Code.
 
 O projeto possui 4 páginas principais e 2 subpáginas, totalizando 6 páginas que compõem a aplicação. São elas:
 
-home.html – É página inicial, exibe o lembrete.
+home.html – É a página inicial, exibe o lembrete.
 ![Página Inicial](Screenshots/Screenshot_7.png)
 
 calendar.html ¬– Exibe o calendário completo.
