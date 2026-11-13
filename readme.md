@@ -35,22 +35,22 @@ As tecnologias utilizadas foram: HTML5, CSS3, JavaScript e Visual Studio Code.
 O projeto possui 4 páginas principais e 2 subpáginas, totalizando 6 páginas que compõem a aplicação. São elas:
 
 home.html – É página inicial, exibe o lembrete.
-![Página Inicial](screenshot_7.png)
+![Página Inicial](Screenshots/Screenshot_7.png)
 
 calendar.html ¬– Exibe o calendário completo.
-![Calendário](screenshot_8.png)
+![Calendário](Screenshots/Screenshot_8.png)
 
 trabalhos.html – Mostra os trabalhos registrados e permite a adição/edição de cada um deles.
-![Trabalhos](screenshot_10.png)
+![Trabalhos](Screenshots/Screenshot_10.png)
  
 trabalhos2.html – É a subpágina relacionada ao registro e edição dos trabalhos.
-![Registro de Trabalhos](screenshot_9.png)
+![Registro de Trabalhos](Screenshots/Screenshot_9.png)
 
 equipamentos.html – Mostra os equipamentos registrados e permite a adição/edição de cada um deles.
-![Equipamentos](screenshot_11.png)
+![Equipamentos](Screenshots/Screenshot_11.png)
  
 equipamentos2.html – É a subpágina relacionado ao registro e edição dos equipamentos.
-![Registro de Equipamentos](screenshot_12.png)
+![Registro de Equipamentos](Screenshots/Screenshot_12.png)
  
 **Para execução da aplicação, é necessária a instalação dos 6 arquivos html, situando-os em uma mesma pasta. Assim, ao clicar em qualquer arquivo, essa página específica abrirá no Google Chrome.**
 
