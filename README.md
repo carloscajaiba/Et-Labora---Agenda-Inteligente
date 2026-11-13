@@ -23,9 +23,10 @@ Calendário: Tem o funcionamento de um calendário comum, mas tem conexão com a
 Trabalhos: É a principal funcionalidade da Et Labora. Aqui, o usuário pode colocar os trabalhos que ele deve realizar, registrando nome, data, recorrência, uso de equipamentos e outras informações relevantes. O que é colocado aqui é utilizado com base para exibição no Calendário e no Lembrete.
 Equipamentos: É uma função complementar à anterior. Permite o registro dos equipamentos possuídos pela empresa e sua disponibilidade atual, mantendo a transparência da situação de cada maquinário. Equipamentos que estão marcados como “Disponíveis” são exibidos na aba Trabalhos ao selecionar a opção de uso de equipamentos, permitindo a seleção de quais máquinas serão utilizadas em cada serviço.
 
-5. Tecnologias
+4. Tecnologias
 
 As tecnologias utilizadas foram: HTML5, CSS3, JavaScript e Visual Studio Code.
+
 5. Projeto
 
 O projeto possui 4 páginas principais e 2 subpáginas, totalizando 6 páginas que compõem a aplicação. São elas:
@@ -44,7 +45,7 @@ equipamentos2.html – É a subpágina relacionado ao registro e edição dos eq
  
 Para execução da aplicação, é necessária a instalação dos 6 arquivos html, situando-os em uma mesma pasta. Assim, ao clicar em qualquer arquivo, essa página específica abrirá no Google Chrome.
 
-5. Futuras melhorias
+6. Futuras melhorias
 
 Melhoria 1: Expandir as opções da aba de registro de trabalhos. Adicionar mais configurações relacionadas a isso, como especificação de datas.
 
